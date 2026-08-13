@@ -43,3 +43,15 @@ class pelajar : public orang {
     }
 
 };
+
+int main()
+{
+    //deklarasi dan pemberian nilai untuk variabel object siswa1
+    pelajar siswal("andi laksono", "SMAN 1 Bantul");
+    //pemanggilan function perkenalan dari class pelajar
+    cout << siswal.perkenalan();
+    //pemanggilan function warisan dari class orang kepada class object
+    cout << "Hasil =" << siswal.jumlah(10, 90) << endl;
+
+    return 0;
+}
